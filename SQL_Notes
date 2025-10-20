@@ -13,7 +13,8 @@ Session - 5
 
 Session - 6
 
-Go for Path : Page.md  to check Image for Below
+Go for Path : Page.md  to check Image for Below 
+ Link : https://github.com/Saicharan225/SQL/blob/c8c71da9b5fdc1b48e581a7fbe103494e17b23d3/Page.md
 
 "Clean Page" refers to a page in the buffer pool that has been retrieved from the data file (MDF) but has not yet been modified. 
 When SQL Server needs a page for an operation (like an INSERT, UPDATE, or DELETE), it first checks if the page is already in the buffer pool. 
