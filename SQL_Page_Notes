@@ -21,8 +21,9 @@ When SQL Server needs a page for an operation (like an INSERT, UPDATE, or DELETE
 If not, it fetches the page from disk into the buffer pool. At this point, before any changes are made, the page is considered "clean."
 
 "Dirty page" refers to a data page in the buffer cache (memory) that has been modified but has not yet been written back to the physical data files on disk.
+....To get dirty pages Select * from sys.dm_os_buffer_discriptors
 
-"WAL" Write Ahead Loging The core principle of WAL is that log records describing data modifications must be written to stable storage 
+"WAL" Write Ahead Logging The core principle of WAL is that log records describing data modifications must be written to stable storage 
 (the transaction log file) before the actual modified data pages are written to the data files. 
 
 "Checkpoint" is a process that periodically writes modified data pages (known as "dirty pages") from the in-memory buffer cache to the physical data files on disk. 
@@ -40,5 +41,10 @@ It also writes associated transaction log records from the log buffer to the tra
         Select name, TARGET_RECOVERY_TIME_in_seconds from sys.databases where name = 'DATABASENAME'
 ......To check checkpoint logs
          Select * from ::fn_dblog(null,null) where [operation] like '%CKPT'
+
+
+"Lazy Writer" in SQL Server is a crucial background process responsible for managing the buffer pool, which is the area in memory where SQL Server caches data pages.
+Its primary function is to optimize memory usage and disk I/O by periodically freeing up space in the buffer pool.
+ 
 
 
