@@ -17,3 +17,5 @@ Go for Path : Page.md
 When SQL Server needs a page for an operation (like an INSERT, UPDATE, or DELETE), it first checks if the page is already in the buffer pool. 
 If not, it fetches the page from disk into the buffer pool. At this point, before any changes are made, the page is considered "clean."
 
+"Dirty page" refers to a data page in the buffer cache (memory) that has been modified but has not yet been written back to the physical data files on disk.
+
