@@ -11,5 +11,7 @@
 9.Text/Image Page - 
 
 
-
+"Clean Page" refers to a page in the buffer pool that has been retrieved from the data file (MDF) but has not yet been modified. 
+When SQL Server needs a page for an operation (like an INSERT, UPDATE, or DELETE), it first checks if the page is already in the buffer pool. 
+If not, it fetches the page from disk into the buffer pool. At this point, before any changes are made, the page is considered "clean."
 
