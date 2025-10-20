@@ -31,7 +31,7 @@ It also writes associated transaction log records from the log buffer to the tra
     1. Automatic checkpoint (Instance level checkpoint)
     2. Internal checkpoint
     3. Manual checkpoint
-    4.
+    4. Indirect checkpoint
 ----To check logfile full due to checkpoint (Query displys Checkpint or Oldest Page
    Select name, log_reuse_wait_desc from Sys.databases Where name = 'database name'
 
