@@ -11,6 +11,8 @@
 9.Text/Image Page - 
 
 
+<img width="756" height="518" alt="image" src="https://github.com/user-attachments/assets/17ae165b-0258-437f-af77-71d64f2c013c" />
+
 Go for Path : Page.md  to check Image
 
 "Clean Page" refers to a page in the buffer pool that has been retrieved from the data file (MDF) but has not yet been modified. 
