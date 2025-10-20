@@ -32,12 +32,13 @@ It also writes associated transaction log records from the log buffer to the tra
     2. Internal checkpoint
     3. Manual checkpoint (Query - CHECKPOINT)
       ----To check logfile full due to checkpoint (Query displys Checkpint or Oldest Page
-   Select name, log_reuse_wait_desc from Sys.databases Where name = 'database name'
-
+                                   Select name, log_reuse_wait_desc from Sys.databases Where name = 'database name'
     4. Indirect checkpoint (database level) 
     ... To set indirect checkpoint 
         Alter Database DATABASENAME SET TARGET_RECOVERY_TIME = 120 SECONDS;
     .....To check checkpoint time
         Select name, TARGET_RECOVERY_TIME_in_seconds from sys.databases where name = 'DATABASENAME'
+......To check checkpoint logs
+         Select * from ::fn_dblog(null,null) where [operation] like '%CKPT'
 
 
