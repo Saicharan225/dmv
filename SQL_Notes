@@ -1,3 +1,4 @@
+Session - 5
 ..............Types of Pages : ........
 
 1.Data Page - STore Data
@@ -10,12 +11,27 @@
 8.Boot Page - Contains Metadata
 9.Text/Image Page - 
 
+Session - 6
 
-Go for Path : Page.md  to check Image
+Go for Path : Page.md  to check Image for Below
 
 "Clean Page" refers to a page in the buffer pool that has been retrieved from the data file (MDF) but has not yet been modified. 
 When SQL Server needs a page for an operation (like an INSERT, UPDATE, or DELETE), it first checks if the page is already in the buffer pool. 
 If not, it fetches the page from disk into the buffer pool. At this point, before any changes are made, the page is considered "clean."
 
 "Dirty page" refers to a data page in the buffer cache (memory) that has been modified but has not yet been written back to the physical data files on disk.
+
+"WAL" Write Ahead Loging The core principle of WAL is that log records describing data modifications must be written to stable storage 
+(the transaction log file) before the actual modified data pages are written to the data files. 
+
+"Checkpoint" is a process that periodically writes modified data pages (known as "dirty pages") from the in-memory buffer cache to the physical data files on disk. 
+It also writes associated transaction log records from the log buffer to the transaction log file.
+    Four types of checkpoints
+    1. Automatic checkpoint (Instance level checkpoint)
+    2. Internal checkpoint
+    3. Manual checkpoint
+    4.
+----To check logfile full due to checkpoint (Query displys Checkpint or Oldest Page
+   Select name, log_reuse_wait_desc from Sys.databases Where name = 'database name'
+
 
