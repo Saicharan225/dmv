@@ -1,11 +1,11 @@
 ..............Types of Pages : ........
 
-1.Data Page
-2.Global Allocation Map (GAM)
-3.Shared Global Allocation Map (SGAM)
+1.Data Page - STore Data
+2.Global Allocation Map (GAM) - Allocates Pages
+3.Shared Global Allocation Map (SGAM) - Track the Page informaation
 4.Page Free Space
 5.Differential Changed Map (DCM)
 6.Bulk Changed Map (BCM)
 7.Index Allocation Map (IAM)
-8.Boot Page
-9.Text/Image Page
+8.Boot Page - Contains Metadata
+9.Text/Image Page - 
