@@ -53,3 +53,7 @@ caches data pages.Its primary function is to optimize memory usage and disk I/O 
 "Consistency" - A transaction should not leave a database and its related structure in In-Consistency state.
 "Isolation" - A transaction should see the data only before or after the concurrent transaction gets completed, when transaction is in-progress.
 "Durability" - All the transaction should be persisted dispite system failure.
+
+"Eager Writer" is a background process primarily responsible for writing dirty data pages to disk that are associated with minimally logged operations.
+The Eager Writer is specifically activated during operations that are minimally logged, such as BULK INSERT, SELECT INTO, WRITETEXT, and UPDATETEXT. 
+These operations generate less transaction log information, which can improve performance, but require a different mechanism to ensure data durability.
