@@ -3,3 +3,5 @@ Instance
   1. Default instance - it doent not require a client to specify the name of the instance to make connection. The client only has to know the server name.
   2. Named Instance - It is identified by the network name of the computer plus the instance name that you specify during installation. The client must specify
                       both server name and intance name when connecting.
+
+In one server we can install 50 Instances
