@@ -43,8 +43,7 @@ It also writes associated transaction log records from the log buffer to the tra
          Select * from ::fn_dblog(null,null) where [operation] like '%CKPT'
 
 
-"Lazy Writer" in SQL Server is a crucial background process responsible for managing the buffer pool, which is the area in memory where SQL Server caches data pages.
-Its primary function is to optimize memory usage and disk I/O by periodically freeing up space in the buffer pool.
+"Lazy Writer" in SQL Server is a crucial background process responsible for managing the buffer pool, which is the area in memory where SQL Server caches data pages.Its primary function is to optimize memory usage and disk I/O by periodically freeing up space in the buffer pool.
  
 
 
