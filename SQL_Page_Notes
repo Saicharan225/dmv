@@ -47,4 +47,9 @@ It also writes associated transaction log records from the log buffer to the tra
 caches data pages.Its primary function is to optimize memory usage and disk I/O by periodically freeing up space in the buffer pool.
  
 ***********Session : 6**********************************************************************************************************************************************
-"ACID" - Atomocity, Consistency, Isolation, Durability
+"ACID" - Atomicity, Consistency, Isolation, Durability
+
+"Atomicity" - A transaction must be an Atomic unit of work in nature. Do everything or Don't do anything.
+"Consistency" - A transaction should not leave a database and its related structure in In-Consistency state.
+"Isolation" - A transaction should see the data only before or after the concurrent transaction gets completed, when transaction is in-progress.
+"Durability" - All the transaction should be persisted dispite system failure.
