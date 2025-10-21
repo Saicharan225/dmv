@@ -1,4 +1,4 @@
-Session - 5
+******Session - 5************************************************************************************************************************************************
 ..............Types of Pages : ........
 
 1.Data Page - STore Data
@@ -11,7 +11,7 @@ Session - 5
 8.Boot Page - Contains Metadata
 9.Text/Image Page - 
 
-Session - 6
+*******Session - 6**********************************************************************************************************************************************
 
 Go for Path : Page.md  to check Image for Below 
  Link : https://github.com/Saicharan225/SQL/blob/c8c71da9b5fdc1b48e581a7fbe103494e17b23d3/Page.md
@@ -43,7 +43,8 @@ It also writes associated transaction log records from the log buffer to the tra
          Select * from ::fn_dblog(null,null) where [operation] like '%CKPT'
 
 
-"Lazy Writer" in SQL Server is a crucial background process responsible for managing the buffer pool, which is the area in memory where SQL Server caches data pages.Its primary function is to optimize memory usage and disk I/O by periodically freeing up space in the buffer pool.
+"Lazy Writer" in SQL Server is a crucial background process responsible for managing the buffer pool, which is the area in memory where SQL Server
+caches data pages.Its primary function is to optimize memory usage and disk I/O by periodically freeing up space in the buffer pool.
  
-
-
+***********Session : 6**********************************************************************************************************************************************
+"ACID" - Atomocity, Consistency, Isolation, Durability
