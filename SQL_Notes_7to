@@ -4,5 +4,5 @@ Instance
   2. Named Instance - It is identified by the network name of the computer plus the instance name that you specify during installation. The client must specify
                       both server name and intance name when connecting.
 
-In one server we can install 50 Instances.
+In one server we can install 50 Instances. ( 1 default instance and 49 named instance)
 Instance is collection of binary files .ddl, .exe along with memory.
