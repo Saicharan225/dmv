@@ -6,3 +6,9 @@ Instance
 
 In one server we can install 50 Instances. ( 1 default instance and 49 named instance)
 Instance is collection of binary files .ddl, .exe along with memory.
+
+
+*******Session - 8*********************************************************************************************************
+SQL sever licensing
+1. Per core based Licensing
+2. Server + CAL licensing
