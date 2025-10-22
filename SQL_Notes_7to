@@ -12,3 +12,12 @@ Instance is collection of binary files .ddl, .exe along with memory.
 SQL sever licensing
 1. Per core based Licensing
 2. Server + CAL licensing
+
+Editions :
+1.Enterprise
+2.Standard
+3.Enterprise Evaluation
+4.Express
+5.Developer
+
+
